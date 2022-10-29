@@ -3167,6 +3167,9 @@ BINARYEN_API BinaryenIndex BinaryenFunctionGetNumVars(BinaryenFunctionRef func);
 // specified `Function`.
 BINARYEN_API BinaryenType BinaryenFunctionGetVar(BinaryenFunctionRef func,
                                                  BinaryenIndex index);
+// Adds a new variable to the function with specified type, returning its index.
+BINARYEN_API BinaryenIndex BinaryenFunctionAddVar(BinaryenFunctionRef func,
+                                                  BinaryenType type);
 // Gets the number of locals within the specified function. Includes parameters.
 BINARYEN_API BinaryenIndex
 BinaryenFunctionGetNumLocals(BinaryenFunctionRef func);
